@@ -26,8 +26,8 @@ module.exports = {
     'react': 'react',
     'react-dom': 'react-dom',
     'prop-types': 'prop-types',
-    'classnames': 'classnames',
     'proppy': 'proppy',
-    'proppy-react': 'proppy-react'
+    'proppy-react': 'proppy-react',
+    'classnames': 'classnames'
   }
 }

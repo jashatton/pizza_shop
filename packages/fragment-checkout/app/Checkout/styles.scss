@@ -1,0 +1,17 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  background-color: crimson;
+  height: 100%;
+  width: 100%;
+}
+
+.checkout-header {
+  display: block;
+  font-size: 1.17em;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  height: 2em;
+  color: #ffffff;
+}

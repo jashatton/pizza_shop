@@ -1,25 +1,17 @@
 {
-  "name": "mosaic-tailor-react-example",
+  "name": "pizzastore",
   "version": "1.0.0",
-  "description": "mosaic-tailor-react-example",
+  "description": "Pizza store example: reformulated from https://github.com/tsnolan23/tailor-react-spa",
   "main": "index.js",
   "scripts": {
+    "preinstall": "lerna bootstrap",
+    "prestart-fragments": "lerna run build",
     "start": "node tailor.js",
-    "install-fragment-dependencies": "lerna bootstrap",
-    "build-fragments": "lerna run build",
     "start-fragments": "lerna run --parallel start",
-    "watch-fragments": "lerna run --parallel watch"    
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tsnolan23/mosaic-tailor-react-example.git"
+    "watch-fragments": "lerna run --parallel watch"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tsnolan23/mosaic-tailor-react-example/issues"
-  },
-  "homepage": "https://github.com/tsnolan23/mosaic-tailor-react-example#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "eslint": "^4.11.0",

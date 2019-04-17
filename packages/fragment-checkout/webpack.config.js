@@ -2,13 +2,13 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: './app/index.js',
-  devtool: 'source-map',
   output: {
     path: __dirname + '/public',
     publicPath: 'http://localhost:8081/public/',
     filename: 'bundle.js',
     libraryTarget: 'amd'
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
@@ -26,8 +26,8 @@ module.exports = {
     'react': 'react',
     'react-dom': 'react-dom',
     'prop-types': 'prop-types',
-    'classnames': 'classnames',
     'proppy': 'proppy',
-    'proppy-react': 'proppy-react'
+    'proppy-react': 'proppy-react',
+    'classnames': 'classnames'
   }
 }

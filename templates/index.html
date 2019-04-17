@@ -7,6 +7,27 @@
     body {
       background: #ECEFF4;
     }
+
+    header {
+      height: 80px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #menu {
+      flex: 5;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    #checkout {
+      flex: 1;
+      flex-direction: column;
+    }
   </style>
   <script>
     (function(d) {
@@ -21,11 +42,13 @@
   </script>
 </head>
 <body>
-  <div id="header"></div>
-  <div id="contacts"></div>
-  <div id="chat"></div>
+  <header id="header"></header>
+  <main>
+    <div id="menu"></div>
+    <div id="checkout"></div>
+  </main>
   <fragment src="http://localhost:8081"></fragment>
-  <fragment src="http://localhost:5000"></fragment>
-  <fragment src="http://localhost:3000"></fragment>
+  <fragment src="http://localhost:8082"></fragment>
+  <fragment src="http://localhost:8083"></fragment>
 </body>
 </html>
