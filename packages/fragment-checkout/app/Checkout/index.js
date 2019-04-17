@@ -8,10 +8,10 @@ const Checkout = () => {
   const [ purchases, setPurchases ] = useState([])
 
   useEffect(() => {
-    window.addEventListener('pidiam:item:added', handleItemAdded)
+    document.addEventListener('pidiam:item:added', handleItemAdded)
 
     return () => {
-      window.removeEventListener('pidiam:item:added', handleItemAdded)
+      document.removeEventListener('pidiam:item:added', handleItemAdded)
     }
   })
 

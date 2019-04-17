@@ -5,7 +5,7 @@ import './styles.scss'
 const MenuItem = ({ menuItem }) => {
 
   const handleAddClick = (event) => {
-    window.dispatchEvent(new CustomEvent('pidiam:item:added', { bubbles: true, detail: menuItem }))
+    document.dispatchEvent(new CustomEvent('pidiam:item:added', { bubbles: true, detail: menuItem }))
   }
 
   return (
