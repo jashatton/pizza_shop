@@ -18,7 +18,7 @@ const MenuItem = ({ menuItem }) => {
         <div className="menu-item-description">{menuItem.description}</div>
       </div>
       <div className="menu-item-footer">
-        <button onClick={handleAddClick}>Add</button>
+        <button className="add-button" onClick={handleAddClick}>Add</button>
       </div>
     </div>
   )

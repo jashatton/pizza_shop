@@ -8,6 +8,13 @@
   flex: 1;
 }
 
+.add-button {
+  background-color: #348fff;
+  color: white;
+  width: 100px;
+  height: 40px;
+}
+
 .menu-item-image {
   overflow: hidden;
   object-fit: cover;
@@ -29,7 +36,9 @@
 
 .menu-item-description {
   max-width: 300px;
-  font-size: small;
+  font-size: medium;
+  min-height: 10px;
+  margin-bottom: 3px;
 }
 
 .menu-item-footer {

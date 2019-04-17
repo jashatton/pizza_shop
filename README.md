@@ -1,12 +1,16 @@
-# Tailor React Single-Page Application
+# A Tailor.js / React based microfrontend demonstration project
 
-![Project Screenshot](./.github/screenshot.png)
+This is a reformulation of this [repo](https://github.com/tsnolan23/tailor-react-spa).
 
-This repository is an example application using the [Mosaic frontend microservices architecture](https://mosaic9.org).
+The reason for the reformulation is to have a simple easy to understand domain and demonstrate how micro-frontends can 
+and should integrate.  The original project was good at demonstrating sharing UIs to a common index page, but, didn't
+show how to integrate them together.
 
-It makes use of [Tailor](https://github.com/zalando/tailor) only, so it is a pretty basic example.
+## Design
 
-Since the idea is that a separate team would be in charge of each of the fragments, there is some duplicate code within each of the fragments such as the Webpack configuration.
+The project leverages [Tailor](https://github.com/zalando/tailor) and React applications built using Webpack.  
+This project doesn't use Create React App scripts to manage the React builds because CRA and it's Webpack setup in 
+particular is not friendly to having multiple CRA apps under the same index page.
 
 ## How it works
 
@@ -18,7 +22,7 @@ Tailor also injects a RequireJS bundle to your template so you're able to use We
 
 Fragments are small applications. 
 
-They might be React applications, or any other implementation.
+They might be React applications, or any other implementations.
 
 Fragments do not need to necessarily render something. 
 
@@ -26,8 +30,8 @@ This app consists basically in a couple of fragments:
 
  - fragment-common
  - fragment-header
- - fragment-contacts
- - fragment-chat
+ - fragment-menu
+ - fragment-checkout
 
 Each fragment contains it's own `webpack.config.js` that specifies how to build it.
 
@@ -62,7 +66,7 @@ The dependency management is handled with RequireJS on runtime.
 
 1. Clone this repository using `git clone https://github.com/armand1m/mosaic-tailor-react-example.git`
 1. Install all of the base dependencies with `npm install`
-1. Install all of the fragment dependencies with `npm run install-fragment-dependencies`
+1. Install all of the fragment dependencies with `npm run preinstall`
 1. Build the fragments with `npm run build-fragments`
 
 ## Running
